@@ -37,9 +37,10 @@ public class SDN {
         }
         Compiler.jar();
         File upload =  new File("./upload");
+        Inspector inspector = new Inspector();
         for(File file : upload.listFiles()) {
             if(file.isFile() && file.getName().endsWith(".jar")) {
-                if(Inspector.inspect(file)) {
+                if(inspector.inspect(file)) {
                    file.delete();
                 }
             }

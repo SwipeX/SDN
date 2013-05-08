@@ -9,11 +9,13 @@
     <file path="/Compile.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368013249231" ignored="false" />
     <file path="/fragment.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368013316193" ignored="false" />
     <file path="/Compiler.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368028603007" ignored="false" />
-    <file path="/SDN.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368025487062" ignored="false" />
-    <file path="/Inspector.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368027951582" ignored="false" />
-    <file path="$PROJECT_DIR$/../SDN/src/org/powerbuddy/sdn/SDN.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368028348344" ignored="false" />
-    <file path="$PROJECT_DIR$/../SDN/src/org/powerbuddy/comp/Compiler.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368028566580" ignored="false" />
-    <file path="$PROJECT_DIR$/../SDN/src/org/powerbuddy/net/FileDownload.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368028566580" ignored="false" />
+    <file path="/SDN.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368030500793" ignored="false" />
+    <file path="/Inspector.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368030483711" ignored="false" />
+    <file path="/Inspectable.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368029469132" ignored="false" />
+    <file path="/RuntimeInspector.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368029666955" ignored="false" />
+    <file path="/ClassLoaderInspector.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368030217639" ignored="false" />
+    <file path="/ClassLoader.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368029897182" ignored="false" />
+    <file path="/ReflectionInspector.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368030427540" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/net/FileDownload.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="11" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +88,7 @@
       <file leaf-file-name="Compiler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/comp/Compiler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="15" selection-start="99" selection-end="99" vertical-scroll-proportion="-4.08">
+            <state line="6" column="15" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,7 +115,28 @@
       <file leaf-file-name="SDN.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/sdn/SDN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="19" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0">
+            <state line="38" column="48" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Inspector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/Inspector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="19" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1902#1913#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuntimeInspector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/RuntimeInspector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="24" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,14 +144,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inspector.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/Inspector.java">
+      <file leaf-file-name="ClassLoaderInspector.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/ClassLoaderInspector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="30" selection-start="323" selection-end="323" vertical-scroll-proportion="-2.184438">
+            <state line="33" column="9" selection-start="921" selection-end="921" vertical-scroll-proportion="1.6213872">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectionInspector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/ReflectionInspector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="36" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1517#1528#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Inspectable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/Inspectable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="26" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,18 +183,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/sdn/SDN.java" />
         <option value="$PROJECT_DIR$/src/net/FTP.java" />
         <option value="$PROJECT_DIR$/src/net/FileDownload.java" />
         <option value="$PROJECT_DIR$/src/org.powerbuddy/net/FTP.java" />
         <option value="$PROJECT_DIR$/src/org.powerbuddy/net/FileDownload.java" />
         <option value="$PROJECT_DIR$/src/org/powerbuddy/comp/Compile.java" />
         <option value="$PROJECT_DIR$/src/org/powerbuddy/script/Script.java" />
-        <option value="$PROJECT_DIR$/src/org/powerbuddy/asm/Inspector.java" />
         <option value="$PROJECT_DIR$/src/org/powerbuddy/comp/Compiler.java" />
         <option value="$PROJECT_DIR$/src/org/powerbuddy/net/FileDownload.java" />
-        <option value="$PROJECT_DIR$/src/org/powerbuddy/sdn/SDN.java" />
         <option value="$PROJECT_DIR$/src/org/powerbuddy/net/FTP.java" />
+        <option value="$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/Inspectable.java" />
+        <option value="$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/RuntimeInspector.java" />
+        <option value="$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/ClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/ClassLoaderInspector.java" />
+        <option value="$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/ReflectionInspector.java" />
+        <option value="$PROJECT_DIR$/src/org/powerbuddy/asm/Inspector.java" />
+        <option value="$PROJECT_DIR$/src/org/powerbuddy/sdn/SDN.java" />
       </list>
     </option>
   </component>
@@ -209,7 +251,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SDN v2" />
+              <option name="myItemId" value="SDN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,7 +261,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SDN v2" />
+              <option name="myItemId" value="SDN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -241,7 +283,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SDN v2" />
+              <option name="myItemId" value="SDN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -263,7 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SDN v2" />
+              <option name="myItemId" value="SDN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -274,10 +316,6 @@
               <option name="myItemId" value="powerbuddy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -285,7 +323,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SDN v2" />
+              <option name="myItemId" value="SDN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -301,6 +339,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDN v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SDN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="powerbuddy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inspectors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -309,6 +373,7 @@
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
@@ -412,6 +477,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -438,19 +516,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -517,12 +582,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -538,11 +604,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67918086" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3208191" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31911263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -612,6 +677,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/net/FileDownload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="11" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/comp/Compiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="15" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/io/FileOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="103" column="0" selection-start="3106" selection-end="3106" vertical-scroll-proportion="0.0">
@@ -619,21 +698,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/net/FTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/sdn/SDN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="19" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/Inspector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="30" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1902#1913#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="0" selection-start="3106" selection-end="3106" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/net/FileDownload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="11" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -646,18 +745,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/comp/Compiler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="15" selection-start="99" selection-end="99" vertical-scroll-proportion="-4.08">
+        <state line="6" column="15" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/Inspectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/sdn/SDN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="48" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/Inspector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="323" selection-end="323" vertical-scroll-proportion="-2.184438">
+        <state line="62" column="19" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1517#1528#0" expanded="true" />
+            <element signature="e#1902#1913#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/ReflectionInspector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="36" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/RuntimeInspector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/powerbuddy/asm/inspectors/ClassLoaderInspector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="9" selection-start="921" selection-end="921" vertical-scroll-proportion="1.6213872">
+          <folding />
         </state>
       </provider>
     </entry>

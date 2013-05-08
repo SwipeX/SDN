@@ -2,6 +2,10 @@ package org.powerbuddy.asm;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.*;
+import org.powerbuddy.asm.inspectors.ClassLoaderInspector;
+import org.powerbuddy.asm.inspectors.Inspectable;
+import org.powerbuddy.asm.inspectors.ReflectionInspector;
+import org.powerbuddy.asm.inspectors.RuntimeInspector;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -17,6 +21,8 @@ import java.util.jar.JarFile;
  * To change this template use File | Settings | File Templates.
  */
 public class Inspector {
+
+    private final static ArrayList<Inspectable> inspectors = new ArrayList<>();
 
     public static String getScriptName(File jar) {
         ClassNode[] nodes = parse(jar);
@@ -34,15 +40,21 @@ public class Inspector {
         return "";
     }
 
-    public static boolean inspect(File jar) {
+    public Inspector() {
+        initiateInspectors();
+    }
+
+    public void initiateInspectors() {
+        inspectors.add(new ClassLoaderInspector());
+        inspectors.add(new RuntimeInspector());
+        inspectors.add(new ReflectionInspector());
+    }
+
+    public boolean inspect(File jar) {
         ClassNode[] nodes = parse(jar);
         for(ClassNode node : nodes) {
-            for(MethodNode method : node.methods) {
-                for(AbstractInsnNode i : method.instructions.toArray()) {
-                    if(i instanceof MethodInsnNode) {
-                        return true;
-                    }
-                }
+            for(Inspectable ins : inspectors) {
+                if(ins.inspect(node));
             }
         }
         return false;
