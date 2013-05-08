@@ -40,7 +40,7 @@ public class SDN {
         for(File file : upload.listFiles()) {
             if(file.isFile() && file.getName().endsWith(".jar")) {
                 if(Inspector.inspect(file)) {
-                   // file.delete();
+                   file.delete();
                 }
             }
         }
