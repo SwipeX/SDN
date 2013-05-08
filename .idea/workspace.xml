@@ -8,9 +8,12 @@
     <file path="/FTP.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368027772719" ignored="false" />
     <file path="/Compile.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368013249231" ignored="false" />
     <file path="/fragment.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368013316193" ignored="false" />
-    <file path="/Compiler.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368021967776" ignored="false" />
+    <file path="/Compiler.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368028397461" ignored="false" />
     <file path="/SDN.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368025487062" ignored="false" />
     <file path="/Inspector.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368027951582" ignored="false" />
+    <file path="$PROJECT_DIR$/../SDN/src/org/powerbuddy/sdn/SDN.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368028348344" ignored="false" />
+    <file path="$PROJECT_DIR$/../SDN/src/org/powerbuddy/comp/Compiler.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368028397461" ignored="false" />
+    <file path="$PROJECT_DIR$/../SDN/src/org/powerbuddy/net/FileDownload.java" changelist="45ecab12-977a-420a-9b35-1389daadc7ad" time="1368028415164" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
