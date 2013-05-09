@@ -5,10 +5,7 @@ import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
 import org.powerbuddy.asm.Inspector;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import java.io.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,7 +18,24 @@ public class FTP {
 
 
 
+    public static void purge(FTPClient ftp) throws Exception {
+        for(File file : new File("./upload").listFiles()) {
+            ftp.changeWorkingDirectory("/jars/");
+            ftp.deleteFile(Inspector.getScriptName(file) + ".jar");
+        }
+
+        for(FTPFile file : FileDownload.list("/src/")) {
+            ftp.changeWorkingDirectory("/src/");
+            ftp.deleteFile(file.getName());
+        }
+
+    }
+
     public static void download(String dir, FTPClient ftp, FTPFile[] children) {
+        download(dir, ftp, children, true);
+    }
+
+    public static void download(String dir, FTPClient ftp, FTPFile[] children, boolean t) {
         try {
             for (FTPFile ftpFile : children) {
                 if (ftpFile.isFile()) {
@@ -31,15 +45,13 @@ public class FTP {
                         f.mkdirs();
                     }
                     output = new FileOutputStream("./scripts/" + dir + ftpFile.getName());
-                    ftp.retrieveFile("/src/" + ftpFile.getName(), output);
-                    System.out.println("Syncing: " + dir + ftpFile.getName());
+                    ftp.retrieveFile((t ? "/src/" : "/jars/") + ftpFile.getName(), output);
                 } else if (ftpFile.isDirectory() && !ftpFile.getName().startsWith(".")) {
                     File f = new File("./scripts/" + dir);
                     if (!f.exists()) {
                         f.mkdirs();
                     }
                     dir += "/" + ftpFile.getName() + "/";
-                    System.out.println("Syncing dir: " + dir);
                     download(dir, ftp, ftp.listFiles("/in/" + dir));
                 }
             }
@@ -52,12 +64,14 @@ public class FTP {
         try {
             for (File file : children) {
                 if (file.isFile() && file.getName().endsWith(".jar")) {
-                    ftp.storeFile(dir + Inspector.getScriptName(file) + "." + file.getName(), new FileInputStream(file));
-                    System.out.println("Syncing: " + dir + Inspector.getScriptName(file) + "." + file.getName());
+                    String name = Inspector.getScriptName(file) + ".jar";
+                    if(name.contains("..jar")) {
+                        continue;
+                    }
+                    ftp.storeFile(dir + name, new FileInputStream(file));
                 } else if (file.isDirectory() && !file.getName().startsWith(".")) {
                     dir += "/" + file.getName() + "/";
                     ftp.makeDirectory(dir);
-                    System.out.println("Syncing dir: " + dir);
                     up(dir, ftp, file.listFiles());
                 }
             }

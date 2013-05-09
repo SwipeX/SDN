@@ -1,0 +1,12 @@
+<config>
+	<classpath>
+        <jar name="asm.jar"/>
+    </classpath>
+	<classpath>
+		<jar name="powerbuddy.jar"/>
+	</classpath>
+	<jars>
+		<dir in="scripts/ftp" out="output"/>
+	</jars>
+
+</config>

@@ -23,6 +23,10 @@ public class FileDownload {
     public static FTPClient ftp = null;
 
     public static FTPFile[] list() {
+       return list("/src/");
+    }
+
+    public static FTPFile[] list(String dir) {
         String hostName = "192.210.232.20";
         String username = "static@powerbuddy.org";
         String password = "staticgonewild!";
@@ -33,7 +37,7 @@ public class FileDownload {
             ftp.connect(hostName);
             ftp.login(username, password);
             ftp.setFileType(org.apache.commons.net.ftp.FTP.BINARY_FILE_TYPE);
-            ftp.changeWorkingDirectory("/src/");
+            ftp.changeWorkingDirectory(dir);
 
 
             return ftp.listFiles();
@@ -44,7 +48,6 @@ public class FileDownload {
     }
 
     static public void extract(String zipFile) throws ZipException, IOException {
-        System.out.println(zipFile);
         int BUFFER = 2048;
         File file = new File(zipFile);
 
